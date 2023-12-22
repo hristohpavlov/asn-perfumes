@@ -38,6 +38,7 @@
   position: fixed;
   right: 330px;
   display: flex;
+    /* flex-direction: column; */
     flex: 1 1 auto;
     max-width: var(--space2XL);
     /* flex-wrap: wrap; */
