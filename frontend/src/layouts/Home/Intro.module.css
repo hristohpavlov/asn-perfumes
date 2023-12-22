@@ -139,8 +139,7 @@
   color: rgb(var(--rgbText) / 0);
   transition: opacity 0.5s ease var(--durationM);
   isolation: isolate;
-  padding-left: 10px;
-      
+
   &::after {
     content: '';
     background: rgb(var(--rgbAccent));
@@ -160,7 +159,7 @@
 
   &[data-plus='true']::before {
     content: '';
-    margin-right: 10px;
+    /* margin-right: 10px; */
     opacity: 0.4;
   }
 

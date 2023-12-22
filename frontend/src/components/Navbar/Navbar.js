@@ -12,6 +12,7 @@ import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.css';
 import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
+import cartIcon from '../../assets/cart-icon.svg';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
@@ -166,6 +167,16 @@ export const Navbar = () => {
               </a>
             </RouterLink>
           ))}
+            <RouterLink href={"/cart"} scroll={false} key={'cart'}>
+              <a
+                data-navbar-item
+                className={styles.navIconLink}
+                aria-current={"cart"}
+                onClick={handleNavItemClick}
+              >
+                <Icon className={styles.navIcon} icon={'cart'} />
+              </a>
+            </RouterLink>
         </div>
         <NavbarIcons desktop />
       </nav>
@@ -189,6 +200,16 @@ export const Navbar = () => {
                 </a>
               </RouterLink>
             ))}
+            <RouterLink href={"/cart"} scroll={false} key={'cart'}>
+              <a
+                data-navbar-item
+                className={styles.navIconLink}
+                aria-current={"cart"}
+                onClick={handleNavItemClick}
+              >
+                <Icon className={styles.navIcon} icon={'cart'} />
+              </a>
+            </RouterLink>
             <NavbarIcons />
             <ThemeToggle isMobile />
           </nav>
