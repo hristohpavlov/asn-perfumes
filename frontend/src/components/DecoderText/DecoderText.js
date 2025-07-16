@@ -81,7 +81,7 @@ export const DecoderText = memo(
 
     return (
       <span className={classes(styles.text, className)} {...rest}>
-        <VisuallyHidden className={styles.label}>{text}</VisuallyHidden>
+        {/* <VisuallyHidden className={styles.label}>{text}</VisuallyHidden> */}
         <span aria-hidden className={styles.content} ref={container} />
       </span>
     );
